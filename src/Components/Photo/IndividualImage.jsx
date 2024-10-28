@@ -4,7 +4,7 @@ export const IndividualImage = ({ image }) => {
     const navigate = useNavigate();
 
     const handleImageClick = () => {// Gọi hàm onImageClick
-        navigate(`/img-detail`, { state: { image } }); // Điều hướng đến "img-detail"
+        navigate(`/img-detail/${image.id}`); // Điều hướng đến "img-detail"
     };
 
     return (
